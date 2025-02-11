@@ -1,0 +1,69 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff !important;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #e1d7c6;
+}
+
+.navbar-brand {
+    margin: 0;
+    font-size: 28px;
+    color: #6c4f3d !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-success {
+    padding: 10px 20px;
+    background-color: #259b64;
+    color: white !important;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #0c643b;
+}
+
+.btn-outline-success:active {
+    transform: scale(0.98);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row:first-child {
+    flex: 1;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.row:first-child input[type="file"] {
+    flex: 1;
+}
+
+.row:first-child button {
+    flex: 1;
+    padding: 10px;
+}
+
+.row:last-child {
+    flex: 1;
+    justify-content: flex-end;
+    text-align: right;
+}
