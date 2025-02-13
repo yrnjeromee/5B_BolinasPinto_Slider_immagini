@@ -39,7 +39,6 @@
     margin: auto;
 }
 
-/* --- Upload: allineato sopra il titolo del carosello --- */
 .upload-section {
     width: 100%;
     text-align: center;
@@ -60,7 +59,6 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* --- Carosello ingrandito --- */
 .carousel {
     width: 90%;
     max-width: 1000px;
@@ -71,8 +69,8 @@ h3 {
 
 .carousel-inner img {
     width: 100%;
-    height: 500px; /* Altezza aumentata */
-    object-fit: cover; /* Mantiene il rapporto senza deformazioni */
+    height: 500px; 
+    object-fit: cover;
 }
 
 .carousel-control-prev-icon,
