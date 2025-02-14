@@ -24,6 +24,12 @@ app.post('/upload', multer({storage: storage}).single('file'), async(req, res) =
 app.delete("/todo/:id", async (req, res) => {
     await database.delete(req.params.id);
     res.json({result: "Ok"});  
- });
+});
+
+app.get("/images",async (req, res)=> {
+    const list =await database.select();
+    res.json(list);
+});
+
  const server = http.createServer(app);
  server.listen(PORT, () => console.log(`Server in esecuzione su http://localhost:${PORT}`));
