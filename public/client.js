@@ -1,13 +1,9 @@
 import { createNavigator } from "./navigator.js";
-import { createPubSub } from "./pubsub.js";
-const fs = require('fs');
-const credenziali = JSON.parse(fs.readFileSync('Login-admin.json'));
+import { createLogin } from ".login.js";
 const navigator = createNavigator(document.querySelector("#container"));
 const inputFile = document.getElementById('file');
 const upload = document.getElementById("upload");
-const admin = document.getElementById("submit");
-const username = document.getElementById("username");
-const password = document.getElementById("password");
+const home = document.getElementById("home");
 
 /*carosello*/
 const myCarouselElement = document.querySelector('#myCarousel');
@@ -16,15 +12,6 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
   touch: false
 });
 /***********/
-
-const login = () =>{
-    if (credenziali.username === username && credenziali.password === password){
-        console.log("Accesso Riuscito");
-        pubsub.publish("loginSuccess");
-    }else{
-        console.log("Accesso Fallito");
-    }
-}
 
 const createMiddleware = () => {
     return{
