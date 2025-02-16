@@ -1,9 +1,11 @@
 import { createNavigator } from "./navigator.js";
-import { createLogin } from ".login.js";
-const navigator = createNavigator(document.querySelector("#container"));
+import { createLogin } from "./login.js";
 const inputFile = document.getElementById('file');
 const upload = document.getElementById("upload");
 const home = document.getElementById("home");
+
+const navigator = createNavigator(document.querySelector("#container"));
+const login = createLogin();
 
 /*carosello*/
 const myCarouselElement = document.querySelector('#myCarousel');

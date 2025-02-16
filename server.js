@@ -27,7 +27,7 @@ app.delete("/todo/:id", async (req, res) => {
 });
 
 app.get("/images",async (req, res)=> {
-    const list =await database.select();
+    const list = await database.select();
     res.json(list);
 });
 

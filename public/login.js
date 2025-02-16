@@ -34,7 +34,10 @@ export const createLogin = () =>{
       submit.onclick = () =>{
         login(inputUsername.value, inputPassword.value).then((result) => {
             if(result){
-
+              const closeButton = document.querySelector('.btn-close');
+              closeButton.click();
+              document.getElementById("home").classList.add("hidden");
+              document.getElementById("admin").classList.remove("hidden");
             }
         }).catch((error) =>{
             console.log("Errore durante il login:", error);

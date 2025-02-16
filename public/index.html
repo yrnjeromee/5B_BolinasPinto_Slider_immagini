@@ -12,7 +12,7 @@
 
 <body>
   <div id="container" class="container">
-    <div id="pagina1" class="page">
+    <div id="home" class="page">
       <div class="row">
         <nav class="navbar bg-body-tertiary">
           <div class="container-fluid">
@@ -33,7 +33,7 @@
                       <h4>Username-Password</h4>
                       <div class="input-group">
                         <input type="text" aria-label="First name" class="form-control" id="username">
-                        <input type="text" aria-label="Last name" class="form-control" id="passwords">
+                        <input type="text" aria-label="Last name" class="form-control" id="password">
                       </div>
                     </div>
                     <div class="modal-footer">
@@ -89,24 +89,24 @@
           </div>
         </div>
       </div>
-      <div class="row"><a href="#pagina2">Admin</a></div>
     </div>
-    <div id="pagina2" class="page">
-      <div class="row">
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand">Progetto slider immagini</a>
-            <form class="d-flex">
+    <div id="admin" class="page">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Progetto slider immagini</a>
+          <form class="d-flex">
+            <a href="#home">
               <button type="button" class="btn-outline-success">
                 Home
               </button>
-            </form>
-          </div>
-        </nav>
-        <div class="row"><a href="#pagina1">Home</a></div>
-      </div>
+            </a>
+          </form>
+        </div>
+      </nav>
+      <table id="tabella"></table>
     </div>
-    <script type="module" src="./client.js"></script>
+  </div>
+  <script type="module" src="client.js"></script>
 </body>
 
 </html>
