@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "express": "^4.21.2",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yrnjeromee/5B_BolinasPinto_Slider_immagini.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yrnjeromee/5B_BolinasPinto_Slider_immagini/issues"
+  },
+  "homepage": "https://github.com/yrnjeromee/5B_BolinasPinto_Slider_immagini#readme",
+  "description": ""
 }
